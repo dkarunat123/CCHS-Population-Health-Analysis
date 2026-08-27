@@ -140,11 +140,7 @@ The regression models provided an additional way to examine how demographic and 
 
 ## Processed data
 
-Intermediate and analysis-ready outputs are stored in the `data/processed/` directory.
-
-These include prevalence tables, regression output tables, and R data objects created during the workflow.
-
-The larger original CCHS files are intentionally excluded from the repository.
+Intermediate and analysis-ready outputs are stored in the `data/processed/` directory. These include prevalence tables, regression output tables, and R data objects created during the workflow. 
 
 ## Repository structure
 
@@ -194,7 +190,7 @@ The analytical workflow is organized so that the project can be rebuilt from the
 05_build_data_mart.R
 ```
 
-The resulting data mart can then be used directly in SQLite, Power BI, or Tableau.
+The resulting data mart was then used directly in SQLite, Power BI, or Tableau.
 
 The raw CCHS data are not included in the repository because of their size. The `data/raw/` directory is excluded through `.gitignore`.
 
