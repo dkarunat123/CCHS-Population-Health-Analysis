@@ -98,7 +98,12 @@ The analytical data mart was also used to build an interactive Power BI report.
 The report contains two main pages.
 
 - The **Prevalence Overview** page allows users to select a health outcome and population characteristic and compare weighted prevalence across groups. It also includes an overall weighted prevalence summary and interactive filtering.
+  ### Prevalence Overview
+![Power BI Prevalence Overview](powerbi/prevalence_overview.png)
+
 - The **Regression Results** page focuses on adjusted and unadjusted odds ratios. Users can filter by outcome and predictor, compare model estimates visually, and inspect a table containing odds ratios, confidence intervals, and p-values.
+  ### Regression Results
+![Power BI Regression Results](powerbi/regression_results.png)
 
 The Power BI file is stored in:
 
