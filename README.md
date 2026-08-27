@@ -61,6 +61,21 @@ data/mart/
 
 This structure separates descriptive information from analytical measurements and makes the processed results easier to reuse across different tools.
 
+## Tableau
+
+The prevalence data mart was used to build an interactive Tableau dashboard that ranks population subgroups by weighted prevalence across multiple demographic, socioeconomic, behavioural, health, and geographic characteristics.
+
+The dashboard displays the top 15 population groups for the selected health outcome, ordered from highest to lowest weighted prevalence. Color is used to distinguish the characteristic represented by each subgroup, while the outcome dropdown allows users to switch between diabetes and high blood pressure.
+
+![Tableau Population Health Rankings](tableau/tableau_dashboard.png)
+
+The packaged Tableau workbook is stored in:
+
+```text
+tableau/
+└── CCHS_2022_Population_Health_Tableau.twbx
+```
+
 ## SQL
 
 The data mart was imported into a SQLite database and queried using DB Browser for SQLite.
@@ -110,21 +125,6 @@ The Power BI file is stored in:
 
 ```text
 powerbi/
-```
-
-## Tableau
-
-A second interactive dashboard was created in Tableau using the same prevalence data mart.
-
-The Tableau dashboard allows users to select a health outcome and population characteristic and compare weighted prevalence across population groups. Dropdown filters for both outcome and characteristic provide an interactive way to explore the same reporting layer in a second business intelligence platform.
-
-![Tableau Population Health Dashboard](tableau/tableau_dashboard.png)
-
-The packaged Tableau workbook is stored in:
-
-```text
-tableau/
-└── CCHS_2022_Population_Health_Tableau.twbx
 ```
 
 ## R visualizations
@@ -217,7 +217,7 @@ The analytical workflow is organized so that the project can be rebuilt from the
 05_build_data_mart.R
 ```
 
-The resulting data mart was then used as the analytical source for SQLite, Power BI, and Tableau.
+The resulting data mart was then used as the analytical source for Tableau, SQLite, and Power BI.
 
 The raw CCHS data are not included in the repository because of their size. The `data/raw/` directory is excluded through `.gitignore`.
 
@@ -225,7 +225,7 @@ The raw CCHS data are not included in the repository because of their size. The 
 
 This project uses **R, RStudio, SQLite, DB Browser for SQLite, Power BI, Tableau, Git, and GitHub**.
 
-R was used for data import, cleaning, survey-weighted descriptive analysis, logistic regression, visualization, and construction of the analytical data mart. SQLite was used for relational querying, while Power BI and Tableau were used to create interactive reporting dashboards.
+R was used for data import, cleaning, survey-weighted descriptive analysis, logistic regression, visualization, and construction of the analytical data mart. Tableau and Power BI were used to create interactive reporting dashboards, while SQLite was used for relational querying.
 
 Git and GitHub were used to organize, document, and version the completed project.
 
