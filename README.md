@@ -1,8 +1,8 @@
 # CCHS 2022 Population Health Analysis
 
-This project explores population health patterns in the **2022 Canadian Community Health Survey (CCHS) Public Use Microdata File**. The goal was to build a complete analytics workflow starting with raw survey data and ending with cleaned analytical datasets, weighted prevalence estimates, regression results, a reusable data mart, SQL queries, and interactive dashboards.
+This project explores population health patterns in the [2022 Canadian Community Health Survey (CCHS) Public Use Microdata File](https://www150.statcan.gc.ca/n1/pub/82m0013x/82m0013x2024001-eng.htm). The goal was to build a complete analytics workflow starting with raw survey data and ending with cleaned analytical datasets, weighted prevalence estimates, regression results, a reusable data mart, SQL queries, and interactive dashboards.
 
-The analysis focuses on **diabetes** and **high blood pressure**, with comparisons across age, sex, BMI, education, income, smoking status, and province or territory.
+The analysis focuses on diabetes and high blood pressure, with comparisons across age, sex, BMI, education, income, smoking status, and province or territory.
 
 ## Data and analysis
 
@@ -108,7 +108,7 @@ These figures provide a static counterpart to the interactive Power BI dashboard
 
 One of the clearest patterns in the analysis was the increase in weighted diabetes prevalence with age.
 
-In the 2022 CCHS data used here, diabetes prevalence increased from approximately **1.0% among adults aged 18 to 34** to approximately **18.2% among adults aged 65 and older**.
+In the 2022 CCHS data used here, diabetes prevalence increased from approximately 1.0% among adults aged 18 to 34 to approximately 18.2% among adults aged 65 and older.
 
 The age-group estimates were:
 
@@ -117,9 +117,9 @@ The age-group estimates were:
 - **50 to 64:** 10.3%
 - **65 and older:** 18.2%
 
-Provincial and territorial differences were also visible. In the processed results, Newfoundland and Labrador had the highest weighted diabetes prevalence among the available provincial and territorial estimates at approximately **11.9%**, followed by Nova Scotia at approximately **9.8%**.
+Provincial and territorial differences were also visible. In the processed results, Newfoundland and Labrador had the highest weighted diabetes prevalence among the available provincial and territorial estimates at approximately 11.9%, followed by Nova Scotia at approximately 9.8%.
 
-The regression models provided an additional way to examine how demographic and behavioural characteristics were associated with the selected health outcomes. These results are presented alongside 95% confidence intervals and p-values so that the size and uncertainty of each estimate can be considered together.
+The regression models provided an additional way to examine how demographic and behavioral characteristics were associated with the selected health outcomes. These results are presented alongside 95% confidence intervals and p-values so that the size and uncertainty of each estimate can be considered together.
 
 ## Processed data
 
@@ -183,7 +183,7 @@ The raw CCHS data are not included in the repository because of their size. The 
 
 ## Tools
 
-This project currently uses **R, RStudio, SQLite, DB Browser for SQLite, and Power BI**.
+This project uses **R, RStudio, SQLite, DB Browser for SQLite, and Power BI**.
 
 R was used for the main data-processing and statistical workflow, SQLite for relational querying, and Power BI for interactive reporting.
 
