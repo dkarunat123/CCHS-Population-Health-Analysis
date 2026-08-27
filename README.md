@@ -22,7 +22,8 @@ R/
 ├── 04_statistical_analysis.R
 └── 05_build_data_mart.R
 ```
-The scripts are intended to be run sequentially, beginning with the raw CCHS data and ending with the analytical tables used by SQL and business intelligence tools.
+
+The scripts are intended to be run sequentially, beginning with the raw CCHS data and ending with the analytical tables used by SQL and BI tools.
 
 An example of the survey-weighted analysis used to estimate diabetes prevalence by age group is:
 
@@ -98,15 +99,32 @@ The analytical data mart was also used to build an interactive Power BI report.
 The report contains two main pages.
 
 - The **Prevalence Overview** page allows users to select a health outcome and population characteristic and compare weighted prevalence across groups. It also includes an overall weighted prevalence summary and interactive filtering.
-  ![Power BI Prevalence Overview](powerbi/prevalence_overview.png)
+
+![Power BI Prevalence Overview](powerbi/prevalence_overview.png)
 
 - The **Regression Results** page focuses on adjusted and unadjusted odds ratios. Users can filter by outcome and predictor, compare model estimates visually, and inspect a table containing odds ratios, confidence intervals, and p-values.
-  ![Power BI Regression Results](powerbi/regression_results.png)
+
+![Power BI Regression Results](powerbi/regression_results.png)
 
 The Power BI file is stored in:
 
 ```text
 powerbi/
+```
+
+## Tableau
+
+A second interactive dashboard was created in Tableau using the same prevalence data mart.
+
+The Tableau dashboard allows users to select a health outcome and population characteristic and compare weighted prevalence across population groups. Dropdown filters for both outcome and characteristic provide an interactive way to explore the same reporting layer in a second business intelligence platform.
+
+![Tableau Population Health Dashboard](tableau/tableau_dashboard.png)
+
+The packaged Tableau workbook is stored in:
+
+```text
+tableau/
+└── CCHS_2022_Population_Health_Tableau.twbx
 ```
 
 ## R visualizations
@@ -121,7 +139,7 @@ The exported figures are stored in:
 figures/
 ```
 
-These figures provide a static counterpart to the interactive Power BI dashboard and make the main results easy to preview directly from the repository.
+These figures provide a static counterpart to the interactive dashboards and make the main results easy to preview directly from the repository.
 
 ## Selected results
 
@@ -138,11 +156,11 @@ The age-group estimates were:
 
 Provincial and territorial differences were also visible. In the processed results, Newfoundland and Labrador had the highest weighted diabetes prevalence among the available provincial and territorial estimates at approximately 11.9%, followed by Nova Scotia at approximately 9.8%.
 
-The regression models provided an additional way to examine how demographic and behavioral characteristics were associated with the selected health outcomes. These results are presented alongside 95% confidence intervals and p-values so that the size and uncertainty of each estimate can be considered together.
+The regression models provided an additional way to examine how demographic and behavioural characteristics were associated with the selected health outcomes. These results are presented alongside 95% confidence intervals and p-values so that the size and uncertainty of each estimate can be considered together.
 
 ## Processed data
 
-Intermediate and analysis-ready outputs are stored in the `data/processed/` directory. These include prevalence tables, regression output tables, and R data objects created during the workflow. 
+Intermediate and analysis-ready outputs are stored in the `data/processed/` directory. These include prevalence tables and regression output tables created during the workflow.
 
 ## Repository structure
 
@@ -165,15 +183,22 @@ CCHS-Population-Health-Analysis/
 │   │
 │   └── processed/
 │
+├── docs/
+│
 ├── figures/
 │
 ├── powerbi/
+│   ├── CCHS_2022_Population_Health_Dashboard.pbix
+│   ├── prevalence_overview.png
+│   └── regression_results.png
 │
 ├── sql/
 │   ├── analysis_queries.sql
 │   └── cchs_2022_health.db
 │
 ├── tableau/
+│   ├── CCHS_2022_Population_Health_Tableau.twbx
+│   └── tableau_dashboard.png
 │
 ├── CCHS-Population-Health-Analysis.Rproj
 ├── .gitignore
@@ -192,17 +217,17 @@ The analytical workflow is organized so that the project can be rebuilt from the
 05_build_data_mart.R
 ```
 
-The resulting data mart was then used directly in SQLite, Power BI, or Tableau.
+The resulting data mart was then used as the analytical source for SQLite, Power BI, and Tableau.
 
 The raw CCHS data are not included in the repository because of their size. The `data/raw/` directory is excluded through `.gitignore`.
 
 ## Tools
 
-This project uses **R, RStudio, SQLite, DB Browser for SQLite, and Power BI**.
+This project uses **R, RStudio, SQLite, DB Browser for SQLite, Power BI, Tableau, Git, and GitHub**.
 
-R was used for the main data-processing and statistical workflow, SQLite for relational querying, and Power BI for interactive reporting.
+R was used for data import, cleaning, survey-weighted descriptive analysis, logistic regression, visualization, and construction of the analytical data mart. SQLite was used for relational querying, while Power BI and Tableau were used to create interactive reporting dashboards.
 
-A Tableau visualization will be added as a later extension using the same analytical data mart.
+Git and GitHub were used to organize, document, and version the completed project.
 
 ## Data source
 
