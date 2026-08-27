@@ -22,8 +22,25 @@ R/
 ├── 04_statistical_analysis.R
 └── 05_build_data_mart.R
 ```
-
 The scripts are intended to be run sequentially, beginning with the raw CCHS data and ending with the analytical tables used by SQL and business intelligence tools.
+
+An example of the survey-weighted analysis used to estimate diabetes prevalence by age group is:
+
+```r
+cchs_design <- svydesign(
+  ids = ~1,
+  weights = ~WTS_M,
+  data = cchs_clean
+)
+
+diabetes_by_age <- svyby(
+  ~I(diabetes == "Yes"),
+  ~age_group,
+  design = subset(cchs_design, !is.na(diabetes)),
+  FUN = svymean,
+  na.rm = TRUE
+)
+```
 
 ## Data mart
 
