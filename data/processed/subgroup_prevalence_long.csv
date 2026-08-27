@@ -1,0 +1,67 @@
+characteristic,group,outcome,prevalence_percent
+Age group,18 to 34,Diabetes,1.039422425332553
+Age group,18 to 34,High blood pressure,2.5055973249609105
+Age group,35 to 49,Diabetes,3.56843374712314
+Age group,35 to 49,High blood pressure,10.021349099878304
+Age group,50 to 64,Diabetes,10.290558912755623
+Age group,50 to 64,High blood pressure,27.0189835546783
+Age group,65 and older,Diabetes,18.196213316794335
+Age group,65 and older,High blood pressure,44.84815082105674
+Sex,Male,Diabetes,8.971151071915823
+Sex,Male,High blood pressure,20.92140308839511
+Sex,Female,Diabetes,6.894420563535728
+Sex,Female,High blood pressure,19.497912043517207
+Education,Less than secondary school,Diabetes,16.74803673363778
+Education,Less than secondary school,High blood pressure,39.35583198498415
+Education,"Secondary school, no post-secondary",Diabetes,10.939236711766716
+Education,"Secondary school, no post-secondary",High blood pressure,28.25678195619961
+Education,Post-secondary education,Diabetes,6.788003120320331
+Education,Post-secondary education,High blood pressure,17.588046797683628
+BMI group,Underweight / Normal weight,Diabetes,4.256715857667037
+BMI group,Underweight / Normal weight,High blood pressure,11.634393747613533
+BMI group,Overweight / Obese,Diabetes,9.749083471985061
+BMI group,Overweight / Obese,High blood pressure,24.88991734410793
+Smoking status,Lifetime abstainer,Diabetes,6.931758905491114
+Smoking status,Lifetime abstainer,High blood pressure,17.0985488696832
+Smoking status,Experimental smoker,Diabetes,5.578678884925158
+Smoking status,Experimental smoker,High blood pressure,17.459727657300615
+Smoking status,Former occasional smoker,Diabetes,7.938584887536626
+Smoking status,Former occasional smoker,High blood pressure,21.40756846773036
+Smoking status,Former daily smoker,Diabetes,12.216842495239405
+Smoking status,Former daily smoker,High blood pressure,29.693552651156146
+Smoking status,Current occasional smoker,Diabetes,3.517520410089772
+Smoking status,Current occasional smoker,High blood pressure,8.750985219754297
+Smoking status,Current daily smoker,Diabetes,8.07733006219798
+Smoking status,Current daily smoker,High blood pressure,22.54797741840221
+Income quintile,Quintile 1 (lowest),Diabetes,10.467886186299264
+Income quintile,Quintile 1 (lowest),High blood pressure,24.72679474790828
+Income quintile,Quintile 2,Diabetes,10.042014961394614
+Income quintile,Quintile 2,High blood pressure,21.73852209329788
+Income quintile,Quintile 3,Diabetes,7.610409618469388
+Income quintile,Quintile 3,High blood pressure,19.567206003513206
+Income quintile,Quintile 4,Diabetes,6.011711599058142
+Income quintile,Quintile 4,High blood pressure,17.912467398812165
+Income quintile,Quintile 5 (highest),Diabetes,5.550018318864382
+Income quintile,Quintile 5 (highest),High blood pressure,17.198049249362015
+Province / territory,Newfoundland and Labrador,Diabetes,11.880039331736093
+Province / territory,Newfoundland and Labrador,High blood pressure,28.570909825416823
+Province / territory,Prince Edward Island,Diabetes,8.40029790180293
+Province / territory,Prince Edward Island,High blood pressure,23.196979139723652
+Province / territory,Nova Scotia,Diabetes,9.813066645195244
+Province / territory,Nova Scotia,High blood pressure,23.45902190977434
+Province / territory,New Brunswick,Diabetes,8.878524280572925
+Province / territory,New Brunswick,High blood pressure,24.667659701748285
+Province / territory,Quebec,Diabetes,8.337728362555636
+Province / territory,Quebec,High blood pressure,19.40477200788871
+Province / territory,Ontario,Diabetes,8.0810463298098
+Province / territory,Ontario,High blood pressure,20.427757078428577
+Province / territory,Manitoba,Diabetes,7.1855089823653255
+Province / territory,Manitoba,High blood pressure,20.79755247201034
+Province / territory,Saskatchewan,Diabetes,6.886828133184846
+Province / territory,Saskatchewan,High blood pressure,22.975705474794815
+Province / territory,Alberta,Diabetes,7.5590628506851605
+Province / territory,Alberta,High blood pressure,18.577160282556555
+Province / territory,British Columbia,Diabetes,6.627442907847518
+Province / territory,British Columbia,High blood pressure,19.2869604385345
+Province / territory,Territories,Diabetes,4.279859616268342
+Province / territory,Territories,High blood pressure,16.82447952106674
